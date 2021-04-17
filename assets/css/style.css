@@ -15,14 +15,56 @@ h1 {
 .bg-red {
     background-color: #d2bf37;
     color: black;
-    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
 }
+
+.align {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+
+}
+
+#about {
+
+    border: solid .5px darkgrey;
+    background-color: #3B5998;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.about2 {
+    height: 100%;
+    border: solid .5px darkgrey;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #93E9BE;
+    margin-top: 20px;
+
+
+
+}
+
+
 
 .center {
     display: inline-block;
     width: 100%;
     text-align: center;
     padding: 10px;
+
 }
 
 .h1 logo {
@@ -30,21 +72,6 @@ h1 {
 }
 
 
-.navbar {
-    background-color: seafoam;
-}
-
-.nav-divider {
-    border: 1px solid black;
-}
-
-.navbar-toggler {
-    background-color: white;
-}
-
-.navbar-toggler-icon {
-    color: black;
-}
 
 
 
@@ -95,9 +122,6 @@ h1 {
 
 }
 
-.bg-blue {
-    background-color: #45A29E;
-}
 
 .bg-green {
     background-color: #93E9BE;
@@ -105,17 +129,18 @@ h1 {
 
 .bg-gray {
     background-color: navy;
-    color:
+
 }
 
-.bg-graffiti {
-    background: url("./images/4.jpg");
+.head {
+    margin-top: 20px;
 }
 
 .bg-black {
     background-color: navy;
-    height: 70px;
-    display: inline-block;
+    height: 100%;
+    padding: 70px 0;
+    display: block;
     width: 100%;
     text-align: center;
 }
@@ -124,59 +149,162 @@ h3 {
     padding-top: 10px;
 }
 
-.header-bg {
-    background: url("../images/4.jpg") no-repeat top left;
-    background-size: cover;
-    clear: both;
-    padding: 0px;
-    margin: 0px;
-}
 
 .text-color {
     color: #66FCF1;
     margin-right: 20px;
-}
-
-.topnav {
-    background-color: #93E9BE;
-    display: inline-block;
-    width: 100%;
+    margin-bottom: 40px;
     text-align: center;
+    text-decoration: none;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    margin: auto;
-    width: 50%;
-    text-align: center;
-    display: inline-block;
-    background-color: #93E9BE;
-    color: #000;
-    font-weight: 500;
-    padding: 14px 16px;
-    text-decoration: dashed;
-    font-size: 20px;
+
+@media (min-width: 600px) {
+    .nav {
+        padding-top: 20px;
+        padding-left: 20px;
+        margin: 0;
+        height: 100%;
+        background-color: #93E9BE;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: WHITE;
-    color: black;
-    text-decoration: 1px black dashed;
+@media (min-width: 600px) {
+    .nav li {
+        display: inline-block;
+        text-decoration: none;
+        color: navy;
+        height: 100%;
+        padding-right: 80px;
+        text-align: center;
+    }
 }
 
-/* Add an active class to highlight the current page */
-.topnav a.active {
+@media (min-width: 600px) {
+    .nav li a {
+        text-decoration: none;
+        font-size: 34px;
+        padding-right: 80px;
+        text-align: center;
+    }
+}
 
-    color: #000;
+@media (min-width: 600px) {
+    .nav li a .icon {
+        width: 50px;
+        height: 50px;
+        background-color: navy;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    .nav li a .name {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .nav li a .name .span {
+
+        text-align: center;
+        color: navy;
+    }
+}
+
+
+
+/* Mobile style after */
+@media (max-width: 500px) {
+    .nav {
+        padding-top: 20px;
+        padding-left: 10px;
+        margin: 0;
+        height: 100%;
+        display: inline-block;
+        background-color: #93E9BE;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .nav li {
+        display: block;
+        text-decoration: none;
+        color: navy;
+        height: 100%;
+        margin-bottom: 20px;
+        padding-right: 10px;
+
+
+    }
+}
+
+@media (max-width: 500px) {
+    .nav li:not(:last-child) a {
+
+        text-decoration: none;
+        display: block;
+        border-bottom: .5px solid black;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    .nav li a .icon {
+        width: 40px;
+        height: 40px;
+        padding-top: 5px;
+        background-color: navy;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .nav li a .name {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav li a .name .span {
+
+        color: navy;
+    }
+}
+
+@media (max-width: 500px) {
+    .slide {
+        height: 300px;
+        width: 100vw;
+
+    }
+}
+
+@media (min-width: 500px) {
+    .slide {
+        height: 600px;
+        width: 100vw;
+
+    }
+}
+
+.active {
     text-decoration: underline;
-}
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-
-.carousel-item {
-    max-height: 500px;
 }
